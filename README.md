@@ -34,3 +34,7 @@ https://github.com/rossoskull/python-beginner/blob/master/sumofn.py
 ## Sum of squares
 Calculate the sum of squares from 1 to n numbers    
 https://github.com/rossoskull/python-beginner/blob/master/sumofsquares.py
+
+## Fibonacci
+Calculate the fibonacci sequence
+https://github.com/rossoskull/python-beginner/blob/master/fibonacci.py
