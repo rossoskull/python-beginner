@@ -1,2 +1,2 @@
 # python-beginner
-Codes I wrote while learing python in the beginning
+Codes I wrote while learning python in the beginning
