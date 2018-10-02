@@ -1,13 +1,12 @@
 a = int(input("Enter a number : "))
-nOfDigits = len(str(a))
+number_of_digits = len(str(a))
 temp = a
-x=0
-arm=0
-while x < nOfDigits:
-    arm += int(temp%10)**(nOfDigits)
-    temp= int(temp/10)
-    x+=1
+x, arm = 0, 0
+while x < number_of_digits:
+    arm += int(temp % 10) ** number_of_digits
+    temp = int(temp / 10)
+    x += 1
 if arm == a:
     print("The number is an Armstrong number.")
-else :
+else:
     print("The number is not an Armstrong number.")
