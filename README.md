@@ -1,5 +1,5 @@
 # python-beginner
-This repository contains some code i wrote while learning Python.
+This repository contains some code I wrote while learning Python.
 
 ## Table of Content:
 * [**Armstrong Numbers**](armstrong.py) - determines whether a number is an Armstrong Number and returns the result in a whole sentence "The Number is \[not\] an Armstrong number."
