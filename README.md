@@ -1,7 +1,8 @@
 # python-beginner
-Codes I wrote while learing python in the beginning
+This repository contains some code I wrote while learning Python.
 
-# Index of files
+## Table of Content:
+* [**Armstrong Numbers**](armstrong.py) - determines whether a number is an Armstrong Number and returns the result in a whole sentence "The Number is \[not\] an Armstrong number."
 
 ## [Armstrong](https://github.com/rossoskull/python-beginner/blob/master/armstrong.py)
 Determine if a number is an [Armstrong number](https://pages.mtu.edu/~shene/COURSES/cs201/NOTES/chap04/arms.html) or not
@@ -43,3 +44,4 @@ Calculate the sum of squares from 1 to n numbers
 Calculate the sum of cubes from 1 to n numbers
 
 1<sup>3</sup> + 2<sup>3</sup> + 3<sup>3</sup> + ........ (up to n<sup>3</sup>)     
+
