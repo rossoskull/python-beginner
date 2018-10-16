@@ -8,7 +8,7 @@ class Account():
         self.name = name
         self.id = id
         self.pin = pin
-        self.bal = int(bal)
+        self.bal = float(bal)
 
     def getName(self):
         print("Name of Account Holder : "+self.name)
@@ -29,7 +29,14 @@ class Account():
 #DEFINE FUNCTIONS: --------------------------------------------
 def printMenu():
     print("Select one of the options below: \n1) New Account\n2) Display Account\n3) Transactions\n4) Exit")
-    x = int(input(r"Enter your choice here (1\2\3\4): "))
+    while True:
+        try:
+            x = int(input(r"Enter your choice here (1\2\3\4): "))
+            if x > 4 or x < 1:
+                raise ValueError
+            break
+        except:
+            print("Please enter either 1, 2, 3, or 4 and press enter")
     return x
 
 
@@ -98,7 +105,7 @@ while True:
         if (c is 'y') or (c is 'Y'):
             while True:
                 try:
-                    bal = int(input("Enter Your Amount : "))
+                    bal = float(input("Enter Your Amount : "))
                     break
                 except ValueError:
                     print("Please Enter An Amount In Numbers! ")
@@ -149,11 +156,11 @@ while True:
             while True:
                 x = str(input("Enter your Choice : "))
                 if (x is 'c') or (x is 'C'):
-                    am = int(input("Enter the amount : "))
+                    am = float(input("Enter the amount : "))
                     break
 
                 elif (x is 'd') or (x is 'D'):
-                    am = int(input("Enter the amount : "))
+                    am = float(input("Enter the amount : "))
                     break
 
                 else:
