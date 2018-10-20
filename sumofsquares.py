@@ -1,6 +1,7 @@
-n = int(input("Enter the number till which you want the sum of squares : "))
-sumS=0
-for x in range(1,n+1):
-    sumS += x**2
+def summation_by_formula(n):
+    return (n * (n+1) * (2*n + 1)) // 6
 
-print("The sum of squares till first %d numbers is %d." % (n, sumS))
+
+if __name__ == "__main__":
+    num = int(input("Enter the number till which you want the sum of squares : "))
+    print("The sum of squares till first %d numbers is %d." % (num, summation_by_formula(num)))

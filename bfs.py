@@ -1,30 +1,32 @@
 import collections
-class graph:
-    def __init__(self,gdict=None):
-        if gdict is None:
-            gdict = {}
-        self.gdict = gdict
 
-def breadthfs(graph, startnode):
 
-        seen, queue = set([startnode]), collections.deque([startnode])
+class Graph:
+    def __init__(self, graph=None):
+        self.graph_dict = graph if graph else {}
+
+    def bfs(self, start_node):
+        seen, queue = {start_node}, collections.deque([start_node])
         while queue:
             vertex = queue.popleft()
-            marked(vertex)
-            for node in graph[vertex]:
+            self.marked(vertex)
+            for node in self.graph_dict[vertex]:
                 if node not in seen:
                     seen.add(node)
                     queue.append(node)
 
-def marked(n):
-    print(n)
+    @staticmethod
+    def marked(n):
+        print(n)
 
-# The graph dictionary
-gdict = { "a" : set(["b","c"]),
-                "b" : set(["a", "d"]),
-                "c" : set(["a", "d"]),
-                "d" : set(["e"]),
-                "e" : set(["a"])
-                }
 
-breadthfs(gdict, "a")
+if __name__ == "__main__":
+    # The graph dictionary
+    graph_dict = {"a": {"b", "c"},
+                  "b": {"a", "d"},
+                  "c": {"a", "d"},
+                  "d": {"e"},
+                  "e": {"a"}
+                  }
+    g = Graph(graph_dict)
+    g.bfs("a")

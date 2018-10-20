@@ -1,6 +1,7 @@
-n = int(input("Enter the number until which you want to find the sum : "))
-sumS = 0
-for x in range(1,n+1):
-    sumS += x
+def summation_by_formula(n):
+    return (n * (n+1)) // 2
 
-print("The sum of first %d numbers is %d." % (n, sumS))
+
+if __name__ == "__main__":
+    num = int(input("Enter the number until which you want to find the sum : "))
+    print("The sum of first %d numbers is %d." % (num, summation_by_formula(num)))
