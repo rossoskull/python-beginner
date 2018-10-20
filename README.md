@@ -45,3 +45,10 @@ Calculate the sum of cubes from 1 to n numbers
 
 1<sup>3</sup> + 2<sup>3</sup> + 3<sup>3</sup> + ........ (up to n<sup>3</sup>)     
 
+## Sum of squares
+Calculate the sum of squares from 1 to n numbers    
+https://github.com/rossoskull/python-beginner/blob/master/sumofsquares.py
+
+## Guessing game
+Guessing game that the user tries to guess a number between 1 and 100  
+https://github.com/rossoskull/python-beginner/blob/master/guessing_game.py
